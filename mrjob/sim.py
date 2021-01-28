@@ -761,10 +761,10 @@ def _sort_lines_in_memory(input_paths, output_path, sort_values=False):
         with open(input_path, 'rb') as input:
             lines.extend(input)
 
-    if sort_values:
-        lines.sort()
-    else:
-        lines.sort(key=lambda line: line.split(b'\t')[0])
+    # if sort_values:
+    #     lines.sort()
+    # else:
+    #     lines.sort(key=lambda line: line.split(b'\t')[0])
 
     with open(output_path, 'wb') as output:
         for line in lines:
