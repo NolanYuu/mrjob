@@ -748,7 +748,9 @@ def _run_task(invoke_task,
 
 
 def _sort_lines_in_memory(input_paths, output_path, sort_values=False):
-    """Sort lines from *input_paths* and output them into *output_path*.
+    """
+    Here's my test
+    Sort lines from *input_paths* and output them into *output_path*.
 
     If *sort_values* is true, sort by the entire line; otherwise just sort
     by everything up to the first tab.
