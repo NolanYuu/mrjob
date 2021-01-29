@@ -767,7 +767,6 @@ def _sort_lines_in_memory(input_paths, output_path, sort_values=False):
     #     lines.sort()
     # else:
     #     lines.sort(key=lambda line: line.split(b'\t')[0])
-    raise Exception(lines)
 
     with open(output_path, 'wb') as output:
         for line in lines:
